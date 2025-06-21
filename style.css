@@ -26,17 +26,17 @@ main {
 .sake-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;    /* カードを同じ高さに揃える */
+  align-items: stretch;  /* カードを同じ高さに揃える */
   gap: 1.5em;
   justify-content: center;
 }
 
 /* — 各カード — */
 .sake-card {
-  /* カード高さを固定 */
-  height: 450px;
+  height: 450px;           /* カード高さを固定 */
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;  /* 上から詰める (autoマージンを解除) */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -47,38 +47,35 @@ main {
 
 /* — 画像ラッパー — */
 .image-wrapper {
-  /* カード高さの3分の1 */
-  height: 33%;
+  height: 33%;            /* カードの高さの1/3 */
   width: 100%;
-  /* 中央揃えで余白が見えるように */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
   margin-bottom: 0.5em;
 }
 
 /* — カード内の画像 — */
 .image-wrapper img {
-  /* 全体を表示：歪ませず縦横比維持 */
   width: auto;
   height: 100%;
-  object-fit: contain;
+  object-fit: contain;     /* 縦横比を保持して全体を表示 */
 }
 
-/* — カード内テキスト — */
+/* — カード内タイトル — */
 .sake-card h2 {
   margin: 0 0 0.3em;
   color: #1a1a1a;
 }
 
+/* — カード内テキスト — */
 .sake-card p {
   margin: 0.3em 0;
 }
 
 /* — コメント部分 — */
 .comment {
-  margin-top: auto; /* 末尾に寄せる */
+  margin-top: 0.5em;       /* auto をやめて自然に表示 */
   font-style: italic;
   color: #555;
 }
