@@ -2,83 +2,91 @@
 
 /* — ページ全体のリセットと基本設定 — */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f4ec;
-    color: #333;
-    font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4ec;
+  color: #333;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 /* — ヘッダー — */
 header {
-    background-color: #2d2d2d;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
 
 /* — メインコンテンツ — */
 main {
-    padding: 2em;
+  padding: 2em;
 }
 
 /* — 日本酒カードのリスト配置 — */
 .sake-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    /* すべてのカードを同じ高さに */
-    gap: 1.5em;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;    /* カードを同じ高さに揃える */
+  gap: 1.5em;
+  justify-content: center;
 }
 
 /* — 各カード — */
 .sake-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5em;
-    width: 280px;
-    overflow: hidden;
+  /* カード高さを固定 */
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  width: 280px;
+  overflow: hidden;
+}
+
+/* — 画像ラッパー — */
+.image-wrapper {
+  /* カード高さの3分の1 */
+  height: 33%;
+  width: 100%;
+  /* 中央揃えで余白が見えるように */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-bottom: 0.5em;
 }
 
 /* — カード内の画像 — */
-.sake-card img {
-    width: 100%;
-    height: 180px;
-    /* 画像の表示領域を固定 */
-    object-fit: cover;
-    /* 中央を切り出して縦横比を維持 */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 0.5em;
-}
-
-/* — カード内タイトル — */
-.sake-card h2 {
-    margin: 0 0 0.3em;
-    color: #1a1a1a;
+.image-wrapper img {
+  /* 全体を表示：歪ませず縦横比維持 */
+  width: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* — カード内テキスト — */
+.sake-card h2 {
+  margin: 0 0 0.3em;
+  color: #1a1a1a;
+}
+
 .sake-card p {
-    margin: 0.3em 0;
+  margin: 0.3em 0;
 }
 
 /* — コメント部分 — */
 .comment {
-    margin-top: 0.5em;
-    font-style: italic;
-    color: #555;
+  margin-top: auto; /* 末尾に寄せる */
+  font-style: italic;
+  color: #555;
 }
 
 /* — フッター — */
 footer {
-    text-align: center;
-    font-size: 0.9em;
-    padding: 1em 0;
-    background-color: #e6e6e6;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0;
+  background-color: #e6e6e6;
 }
