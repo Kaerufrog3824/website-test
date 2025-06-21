@@ -1,0 +1,56 @@
+/* style.css */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f4ec;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+.sake-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.sake-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    width: 280px;
+}
+
+.sake-card h2 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+.sake-card p {
+    margin: 0.3em 0;
+}
+
+.comment {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 1em 0;
+    background-color: #e6e6e6;
+}
