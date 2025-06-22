@@ -1,0 +1,23 @@
+[
+    {
+        "name": "十四代",
+        "prefecture": "山形県",
+        "brewery": "高木酒造",
+        "comment": "芳醇でバランスがよく、特別な日に飲みたい逸品。",
+        "image": "juyondai.jpg"
+    },
+    {
+        "name": "獺祭 45",
+        "prefecture": "山口県",
+        "brewery": "旭酒造",
+        "comment": "フルーティで飲みやすく、日本酒ビギナーにも◎",
+        "image": "dassai45.jpg"
+    },
+    {
+        "name": "黒龍 しずく",
+        "prefecture": "福井県",
+        "brewery": "黒龍酒造",
+        "comment": "キレがありながらもまろやか。料理との相性も抜群。",
+        "image": "kokuryu.jpg"
+    }
+]
