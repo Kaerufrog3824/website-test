@@ -22,24 +22,43 @@ main {
   padding: 2em;
 }
 
+/* — フィルターボタン — */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.filter-buttons button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 0.3em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.filter-buttons button.active {
+  background: #2d2d2d;
+  color: #fff;
+  border-color: #2d2d2d;
+}
+
 /* — 日本酒カードのリスト配置 — */
 .sake-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;  /* カードを同じ高さに揃える */
+  align-items: stretch;
   gap: 1.5em;
   justify-content: center;
 }
 
 /* — 各カード — */
 .sake-card {
-  height: 450px;           /* カード高さを固定 */
+  height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  /* 上から詰める (autoマージンを解除) */
+  justify-content: flex-start;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 1em;
   width: 280px;
   overflow: hidden;
@@ -47,35 +66,29 @@ main {
 
 /* — 画像ラッパー — */
 .image-wrapper {
-  height: 33%;            /* カードの高さの1/3 */
+  height: 33%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5em;
 }
-
-/* — カード内の画像 — */
 .image-wrapper img {
   width: auto;
   height: 100%;
-  object-fit: contain;     /* 縦横比を保持して全体を表示 */
+  object-fit: contain;
 }
 
-/* — カード内タイトル — */
+/* — カード内テキスト — */
 .sake-card h2 {
   margin: 0 0 0.3em;
   color: #1a1a1a;
 }
-
-/* — カード内テキスト — */
 .sake-card p {
   margin: 0.3em 0;
 }
-
-/* — コメント部分 — */
 .comment {
-  margin-top: 0.5em;       /* auto をやめて自然に表示 */
+  margin-top: 0.5em;
   font-style: italic;
   color: #555;
 }
