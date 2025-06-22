@@ -12,23 +12,26 @@
   </header>
 
   <main>
-    <!-- フィルターボタン群 -->
+    <!-- ① フィルターボタン群を追加 -->
     <div class="filter-buttons">
       <button data-region="all" class="active">全て</button>
       <button data-region="北海道・東北">北海道・東北</button>
       <button data-region="関東">関東</button>
       <button data-region="中部">中部</button>
+      <!-- 必要なら他地域も追加 -->
     </div>
 
-    <!-- カードを動的に挿入 -->
-    <section class="sake-list" id="sake-list"></section>
+    <!-- ② カードを動的に挿入 -->
+    <section class="sake-list" id="sake-list">
+      <!-- script.js がここにカードを生成します -->
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 私の日本酒記録帳</p>
   </footer>
 
-  <!-- データ駆動＆フィルター機能用スクリプト -->
+  <!-- ③ JavaScript を読み込む -->
   <script src="script.js"></script>
 </body>
 </html>
