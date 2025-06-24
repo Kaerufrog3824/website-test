@@ -14,13 +14,108 @@
   <main>
     <!-- フィルターボタン群 -->
     <div class="filter-buttons">
-      <button data-region="all" class="active">全て</button>
-      <button data-region="北海道・東北">北海道・東北</button>
-      <button data-region="関東">関東</button>
-      <button data-region="中部">中部</button>
+      <div class="filter-item">
+        <button data-region="all" class="active">全て</button>
+      </div>
+      <div class="filter-item">
+        <button data-region="北海道">北海道</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="北海道">北海道</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="東北">東北</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="青森県">青森</button>
+          <button data-prefecture="岩手県">岩手</button>
+          <button data-prefecture="秋田県">秋田</button>
+          <button data-prefecture="宮城県">宮城</button>
+          <button data-prefecture="山形県">山形</button>
+          <button data-prefecture="福島県">福島</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="関東">関東</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="茨城県">茨城</button>
+          <button data-prefecture="栃木県">栃木</button>
+          <button data-prefecture="群馬県">群馬</button>
+          <button data-prefecture="埼玉県">埼玉</button>
+          <button data-prefecture="千葉県">千葉</button>
+          <button data-prefecture="東京都">東京</button>
+          <button data-prefecture="神奈川県">神奈川</button>
+          <button data-prefecture="山梨県">山梨</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="信越">信越</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="新潟県">新潟</button>
+          <button data-prefecture="長野県">長野</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="中部">中部</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="静岡県">静岡</button>
+          <button data-prefecture="愛知県">愛知</button>
+          <button data-prefecture="岐阜県">岐阜</button>
+          <button data-prefecture="三重県">三重</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="北陸">北陸</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="富山県">富山</button>
+          <button data-prefecture="石川県">石川</button>
+          <button data-prefecture="福井県">福井</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="関西">関西</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="滋賀県">滋賀</button>
+          <button data-prefecture="京都府">京都</button>
+          <button data-prefecture="大阪府">大阪</button>
+          <button data-prefecture="兵庫県">兵庫</button>
+          <button data-prefecture="奈良県">奈良</button>
+          <button data-prefecture="和歌山県">和歌山</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="中国">中国</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="鳥取県">鳥取</button>
+          <button data-prefecture="島根県">島根</button>
+          <button data-prefecture="岡山県">岡山</button>
+          <button data-prefecture="広島県">広島</button>
+          <button data-prefecture="山口県">山口</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="四国">四国</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="香川県">香川</button>
+          <button data-prefecture="徳島県">徳島</button>
+          <button data-prefecture="愛媛県">愛媛</button>
+          <button data-prefecture="高知県">高知</button>
+        </div>
+      </div>
+      <div class="filter-item">
+        <button data-region="九州・沖縄">九州・沖縄</button>
+        <div class="filter-dropdown">
+          <button data-prefecture="福岡県">福岡</button>
+          <button data-prefecture="佐賀県">佐賀</button>
+          <button data-prefecture="長崎県">長崎</button>
+          <button data-prefecture="大分県">大分</button>
+          <button data-prefecture="熊本県">熊本</button>
+          <button data-prefecture="宮崎県">宮崎</button>
+          <button data-prefecture="鹿児島県">鹿児島</button>
+          <button data-prefecture="沖縄県">沖縄</button>
+        </div>
+      </div>
     </div>
 
-    <!-- カードを動的に挿入 -->
     <section class="sake-list" id="sake-list">
       <!-- script.js がここにカードを生成します -->
     </section>
