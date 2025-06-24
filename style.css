@@ -51,21 +51,25 @@ main {
 
 /* — ドロップダウン（都道府県リスト） — */
 .filter-dropdown {
-  display: none;            /* デフォルトは非表示 */
+  display: none;             /* デフォルトは非表示 */
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+
+  /* Flexbox 設定は表示時に利用 */
   flex-wrap: wrap;
   gap: 0.3em;
-  z-index: 10;
 }
 
 .filter-item:hover .filter-dropdown {
-  display: flex;            /* ホバー時に表示 */
+  display: flex;             /* ホバー時に表示 */
 }
 
 .filter-dropdown button {
